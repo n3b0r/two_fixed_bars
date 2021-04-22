@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link href="dist.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="min-h-screen bg-white">
+            <div id="top" class="bg-green-500">
+                <div  class="max-w-7xl mx-auto px-4">
+                    <div class="flex justify-between">
+                        <span>Telf</span>
+                        <span>email</span>
+                        <span>form</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="bg-red-600 border-b border-gray-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between h-16  items-center">
+                        <span>element</span>
+                        <span>element</span>
+                        <span>element</span>
+                        <span>element</span>
+                        <span>element</span>
+                    </div>
+                </div>
+            </nav>
+            <div id="bottom" class="bg-blue-500">
+                <div  class="max-w-7xl mx-auto px-4">
+                    <div class="flex justify-between">
+                        <span>Telf</span>
+                        <span>email</span>
+                        <span>form</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="text-3xl">content</h1>
+            <h1 class="text-3xl">content</h1>
+            <h1 class="text-3xl">content</h1>
+            <h1 class="text-3xl">content</h1>
+            <h1 class="text-3xl">content</h1>
+            <h1 class="text-3xl">content</h1>
+            <h1 class="text-3xl">content</h1>
+            <h1 class="text-3xl">content</h1>
+            <h1 class="text-3xl">content</h1>
+            <h1 class="text-3xl">content</h1>
+            <h1 class="text-3xl">content</h1>
+        </div>
+        <script>
+            // When the user scrolls the page, execute myFunction
+
+                window.onscroll = function () {
+                    myFunction()
+                };
+
+                // Get the header
+                var header1 = document.getElementById("top");
+                var header2 = document.getElementById("bottom");
+
+                // Get the offset position of the navbar
+                var sticky1 = header1.offsetTop;
+                var sticky2 = header2.offsetTop;
+
+                // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                    if ( window.pageYOffset > sticky1 ) {
+                        header1.classList.add("sticky");
+                    } else {
+                        header1.classList.remove("sticky");
+                    }
+                    if ( window.pageYOffset+48 > sticky2 ) {
+                        header2.classList.add("sticky2");
+                    } else {
+                        header2.classList.remove("sticky2");
+                    }
+                }
+
+        </script>
+    </body>
+</html>
